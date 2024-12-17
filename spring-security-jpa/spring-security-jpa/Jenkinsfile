@@ -1,0 +1,71 @@
+pipeline {
+    agent any
+    tools {
+        maven 'Maven'
+    }
+    environment {
+        AWS_ACCOUNT_ID="590184050437"
+        AWS_DEFAULT_REGION="us-east-1"
+        IMAGE_REPO_NAME="banking"
+        IMAGE_TAG="spring-security-jpa"
+        REPOSITORY_URI = "590184050437.dkr.ecr.us-east-1.amazonaws.com/banking"
+    }
+
+    stages {
+        stage('switch to target branch') {
+            steps {
+                script {
+                    checkout scmGit(branches: [[name: '*/feature/case-study-fe-be']], extensions: [], userRemoteConfigs: [[credentialsId: '411b487a-9aa1-42f1-8610-858d49144d9b', url: 'https://tools.publicis.sapient.com/bitbucket/scm/psir/case-study-banking-sahithi-paluri.git']])
+                }
+            }
+        }
+
+        stage('build maven') {
+            steps {
+                dir("spring-security-jpa/spring-security-jpa") {
+                    sh 'mvn clean compile package'
+                }
+            }
+        }
+
+        stage('Building image') {
+            steps {
+
+                    script {
+                        dockerImage = docker.build "${IMAGE_REPO_NAME}:${IMAGE_TAG}"
+                    }
+
+            }
+        }
+
+        stage('ecr login') {
+            steps {
+
+                    // This line can be obtained from ECR
+                    sh 'sudo -E aws ecr get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin 590184050437.dkr.ecr.us-east-1.amazonaws.com'
+
+            }
+        }
+
+        stage('Pushing to ECR') {
+            steps {
+
+                    script {
+                        sh """docker tag ${IMAGE_REPO_NAME}:${IMAGE_TAG} ${REPOSITORY_URI}:${IMAGE_TAG}"""
+                        sh """docker push ${REPOSITORY_URI}:${IMAGE_TAG}"""
+                    }
+
+            }
+        }
+
+        stage('Deleting from Jenkins') {
+            steps {
+
+                    script {
+                        sh 'docker image prune -f'
+                    }
+
+            }
+        }
+    }
+}

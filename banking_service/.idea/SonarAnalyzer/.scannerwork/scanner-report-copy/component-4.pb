@@ -1,0 +1,1 @@
+ 2javaXhrPbanking_service/src/main/java/com/sapient/banking_service/config/ResourceBO.java
