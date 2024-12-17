@@ -1,0 +1,71 @@
+h2{
+    color: black;
+  }
+  .login-comp{
+    color: black;
+    align-items: center;
+  }
+  
+  .signup-container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: black;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Added transition for transform and opacity */
+    }
+    
+  .signup-container input[type="text"],
+  .signup-container input[type="email"],
+  .signup-container input[type="password"],
+  .signup-container input[type="id"],
+  .signup-container input[type="name"],
+  .signup-container input[type="role"] {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid balck;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease, opacity 0.3s ease; /* Added transition for transform and opacity */
+    }
+    
+    .signup-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .signup-container button:hover {
+      background-color: black;
+    }
+    
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+      color: black;
+    }
+    /* Media query for tablets */
+  @media (max-width: 768px) {
+    .navbar-item {
+      margin-left: 10px;
+    }
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 576px) {
+    .navbar-brand,
+    .navbar-item {
+      margin: 0; 
+      padding: 10px; 
+      max-width: 100%; 
+      text-align: center; 
+    }
+  }
