@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarAnalyzer-Project">
+    <sonarQubeConnectionName>sonar.bank</sonarQubeConnectionName>
+    <sonarProperties>
+      <property name="sonar.bank" value="squ_e0300419ef555f10d5edf439f3460e55382d51c4" />
+    </sonarProperties>
+  </component>
+</project>

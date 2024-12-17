@@ -1,0 +1,71 @@
+/* styles.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .register-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* .register-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .register-image img {
+    width: 100%;
+    height: auto;
+  } */
+  .register-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register-image img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    max-height: 100%; /* Ensures the image doesn't exceed the container height */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the entire image fits within the container */
+  }
+  
+  .register-form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  
+  .register-form form {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .register-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .register-form button:hover {
+    background-color: #0056b3;
+  }
+  

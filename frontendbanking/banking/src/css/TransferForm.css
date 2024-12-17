@@ -1,0 +1,64 @@
+.form-wrapper {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 100vh; /* Make the form wrapper fill the viewport height */
+  }
+  
+  .transfer-form-container {
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transfer-form-container h2 {
+    margin-top: 0;
+  }
+  
+  .transfer-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .transfer-form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .transfer-form-container input,
+  .transfer-form-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transfer-form-container button {
+    width: 200px;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #114a8b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .transfer-form-container button[type="submit"] {
+    background-color: #114a8b;
+  }
+  
+  .transfer-form-container button[type="submit"]:hover,
+  .transfer-form-container button[type="button"]:hover {
+    opacity: 0.8;
+  }
+  
+  .transfer-form-container p {
+    margin-top: 10px;
+    color: #114a8b;
+  }
+  
+  
