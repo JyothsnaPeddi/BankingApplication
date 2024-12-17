@@ -1,0 +1,154 @@
+.transfer-container {
+    width: 80%;
+    margin: 90px;
+    /* padding: 20px; */
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transfer-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  
+  .form-table {
+    width: 100%;
+  }
+  
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  
+  .form-label,
+  .form-input {
+    flex: 1 1 50%;
+  }
+  
+ .h2{
+    color: black;
+    text-align: center;
+ }
+  
+  .form-input input {
+    width: 50%;
+   
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-input input:focus {
+    outline: none;
+    border-color:black;
+  }
+  
+  .form-input input:invalid {
+    border-color: black;
+  }
+  
+  .submit-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .transfer-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .transfer-heading {
+      font-size: 1.3rem;
+    }
+  
+    .form-label {
+      font-size: 1rem;
+    }
+  }
+  .success-message {
+    color: #28a745;
+    margin-top: 10px;
+  }
+
+  .error-message,
+.success-message {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #d9534f; /* Error message background color */
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+.success-message {
+  background-color: #5cb85c; /* Success message background color */
+}
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-bank {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.link ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.link ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+

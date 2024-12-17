@@ -1,0 +1,118 @@
+/* General styles */
+h1 {
+  color: #ffffff;
+  animation: slideIn 3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid black; /* Changed border size and color */
+  border-radius: 10px; /* Changed border radius */
+  background-color: white; /* Changed background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Added transition for transform and opacity */
+}
+
+.login-container:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="button"] {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for border-color and box-shadow */
+}
+
+.login-container input[type="button"] {
+  background-color: black; /* Changed button background color */
+  color: white;
+  cursor: pointer;
+}
+
+.login-container input[type="button"]:hover {
+  background-color: black; /* Changed button hover color */
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.token {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue; /* Set a background color for the entire page */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .navbar-item {
+    margin-left: 10px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 576px) {
+  .navbar-brand,
+  .navbar-item {
+    margin: 0; 
+    padding: 10px; 
+    max-width: 100%; 
+    text-align: center; 
+  }
+}
+/* Logout.css */
+
+.logout-button {
+  padding: 8px 16px;
+  background-color: black; /* Red color for logout button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: black; /* Darker shade of red on hover */
+}
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+

@@ -1,0 +1,97 @@
+.create-account-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.create-account-container h2 {
+    color: black;
+    text-align: center;
+}
+
+.create-account-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-container input[type="text"],
+.create-account-container input[type="email"],
+.create-account-container input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.create-account-container input[type="text"]:focus,
+.create-account-container input[type="email"]:focus,
+.create-account-container input[type="number"]:focus {
+    border-color: #333333;
+    outline: none;
+    transform: scale(1.02);
+}
+
+.create-account-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.create-account-container button:hover {
+    background-color: #333333;
+    transform: scale(1.02);
+}
+
+.success-message,
+.error-message {
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.success-message {
+    margin-top: 10px;
+      font-weight: bold;
+      color: black;
+}
+
+.error-message {
+    background-color: red;
+    color: #fff;
+}
+
+.success-message.show,
+.error-message.show {
+    opacity: 1;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .create-account-container {
+        width: 80%;
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 576px) {
+    .create-account-container {
+        width: 95%;
+    }
+}

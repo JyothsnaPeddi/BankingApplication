@@ -1,0 +1,143 @@
+/* AccountList.css */
+
+.account-list-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .account-list-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .account-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .account-list-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .account-list-item:last-child {
+    border-bottom: none;
+  }
+  
+  .account-details {
+    font-size: 1.1rem;
+    color: #333;
+  }
+/* AccountList.module.css */
+.account-list-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.account-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.account-details {
+  font-size: 14px;
+}
+.account-list-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.account-box {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-details {
+  line-height: 1.6;
+}
+
+.account-details strong {
+  font-weight: bold;
+}
+.account-list-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.account-box {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-details {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.account-details strong {
+  font-weight: bold;
+}
+.action-links {
+  margin-top: 20px;
+}
+
+.action-link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.action-link:hover {
+  background-color: black;
+}
+
+  

@@ -1,0 +1,76 @@
+/* General styles */
+h1 {
+  color: #ffffff;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ensure full viewport height */
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.register-button,
+.login-button {
+  padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-button:hover,
+.login-button:hover {
+   /* Darker color on hover */
+  transform: scale(1.1); /* Scale up slightly on hover */
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .navbar-item {
+    margin-left: 10px;
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 576px) {
+  .navbar-brand,
+  .navbar-item {
+    margin: 0; 
+    padding: 10px; 
+    max-width: 100%; 
+    text-align: center; 
+  }
+}
+
+/* Additional animation example (optional) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.login-container {
+  animation: fadeIn 0.8s ease; /* Example animation */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond /* Set a background color for the entire page */
+}
